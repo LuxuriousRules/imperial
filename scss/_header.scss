@@ -1,9 +1,11 @@
 .nav{
-    position: sticky;
-    top: 0;
+    position: fixed;
+     transition: transform 0.3s ease;
     z-index: 1000;
     border-color: #000;
-    background-color: #000;
+    background-color: rgba(255, 255, 255, 0.019); /* белый с прозрачностью */
+    backdrop-filter: blur(10px);
+    animation: fadeDown 3s ease;
 }
 .nav__wrapper{
     display: flex;
@@ -57,9 +59,13 @@
 }
 
 @media(min-width: 1024px) {
+    .nav{
+        width: 100%;
+        z-index: 1000;
+    }
     .nav__wrapper{
-        display: grid;
-        grid-template-columns:  1fr 1fr; 
+        display: flex;
+         
         align-items: center;
         justify-content: center;  
     }
@@ -81,3 +87,11 @@
         right: 2.5vw;
     }
 }
+
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+

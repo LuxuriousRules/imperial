@@ -5,7 +5,9 @@
     background-repeat: no-repeat;   /* чтобы картинка не повторялась */
     background-position: center;    /* выравнивание по центру */
     background-size: cover;
-    height: 50vh;  
+    height: 50vh; 
+    
+    
     
     &__wrapper{
         display: flex;
@@ -19,10 +21,12 @@
     &__title{
       width: 80vw;
       height: auto;
+      animation: fadeup 3s forwards;
     }
     &__subtitle{
       font-weight: 300;
       color: #ffffffd2;
+      animation: fadeup 3s forwards;
     }
 }
 
@@ -47,4 +51,10 @@
     letter-spacing: 0.02em;
   }
 
+}
+
+
+@keyframes fadeup {
+   from { opacity: 0; transform: translateY(0); }
+   to   { opacity: 1; transform: translateY(-20px); }
 }
