@@ -1,0 +1,83 @@
+.nav{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-color: #000;
+    background-color: #000;
+}
+.nav__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+.nav__link{
+    width: 50%;
+    padding: 1.5vw;
+}
+
+.nav__link-item{
+       color: #ffffffd2;
+       text-decoration: none;
+       font-size: clamp(1rem, 2vw ,1.25rem);
+       -webkit-tap-highlight-color: rgb(255, 228, 181); 
+       transition: all 0.2s ease;
+    }
+.nav__link-item:hover{
+    color: rgb(255, 228, 181);
+    transition: all 0.2s ease;
+}
+
+
+.nav__btn-crown{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%; gap: 10vw;
+    padding-right: 1.5vw; 
+}
+.nav__btn{
+    background-color: rgba(75, 75, 75, 0.115);
+    border: 2px solid #c9ac80;
+    color: #c9ac80;
+    cursor: pointer;
+    transition: 
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.2s ease;
+    width: clamp(100px, 30vw, 150px);
+    height: 3.5vh; 
+
+}
+.nav__btn:active {
+  background-color: #c9ac80;
+  color: #000;
+  transform: scale(0.95);
+}
+}
+
+@media(min-width: 1024px) {
+    .nav__wrapper{
+        display: grid;
+        grid-template-columns:  1fr 1fr; 
+        align-items: center;
+        justify-content: center;  
+    }
+    .nav__link{
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav__btn-crow{
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+    }
+    .nav__crown{
+        position: absolute;
+        right: 48vw;
+    }
+    .nav__btn{
+        position: absolute;
+        right: 2.5vw;
+    }
+}

@@ -1,0 +1,79 @@
+.presentation{
+    margin-top: 2.5vh;
+    color: #ffffffd2;
+    font-family: 'Ubuntu';
+    padding: 2.5vw;
+
+.presentation__img{
+    width: 85vw;
+    height: auto;
+}   
+
+&__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+&__title{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 180%;
+    letter-spacing: 0.02em;
+    padding: 1.5vw; margin-left: 1.5vw;
+    
+}
+&__reviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+&__rev-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5.5vw;  
+}
+&__number{
+    font-size: clamp(50px, 10vw, 80px);
+    color: #c9ac80;
+    margin: 0;
+}
+&__item{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+}
+&__revNumv-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+     gap: 5.5vw; width: 100%;
+    
+}
+}
+
+@media(min-width: 1024px) {
+    .presentation__img{
+        width: 30vw !important;
+        height: auto !important;
+    }
+   .presentation__wrapper{
+     display: flex;
+     flex-direction: row;
+     padding: 0;
+     
+   } 
+   .presentation__rev-wrapper{
+    display: flex;
+    flex-direction: column;  
+   }
+   .presentation__revNumv-wrapper{
+    display: flex;
+    gap: 4.5vw;
+   }
+}

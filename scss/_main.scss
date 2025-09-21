@@ -1,0 +1,50 @@
+
+.main{
+    min-height: 30vh;
+    background-image: url(images/background__model-title.png);
+    background-repeat: no-repeat;   /* чтобы картинка не повторялась */
+    background-position: center;    /* выравнивание по центру */
+    background-size: cover;
+    height: 50vh;  
+    
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color:  #c9ac80;
+        position: relative;
+        top: 40vh;
+    }
+    &__title{
+      width: 80vw;
+      height: auto;
+    }
+    &__subtitle{
+      font-weight: 300;
+      color: #ffffffd2;
+    }
+}
+
+@media(min-width: 1024px) {
+  .main{
+    background-image: url(images/background__model-title.png);
+    background-repeat: no-repeat;   /* чтобы картинка не повторялась */
+    background-position: top;    /* выравнивание по центру */
+    background-size: 572px 595px;
+    min-height: 100vh;    
+}
+  .main__title{
+    width: 701px;
+    height: 200px;
+    margin-top: 30vh;
+  }
+  .main__subtitle{
+    font-family: "Ubuntu";
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+  }
+
+}
