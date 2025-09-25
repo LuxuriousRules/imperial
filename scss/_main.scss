@@ -53,6 +53,28 @@
 
 }
 
+@media(min-width: 768px) and (max-width: 932px) and (orientation: landscape) {
+  .main{
+    background-image: url(images/background__model-title.png);
+    background-repeat: no-repeat;   /* чтобы картинка не повторялась */
+    background-position: top;    /* выравнивание по центру */
+    background-size: 572px 595px;
+    min-height: 100vh;    
+}
+  .main__title{
+    width: 701px;
+    height: 200px;
+    margin-top: 30vh;
+  }
+  .main__subtitle{
+    font-family: "Ubuntu";
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+  }
+}
+
 
 @keyframes fadeup {
    from { opacity: 0; transform: translateY(0); }

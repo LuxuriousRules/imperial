@@ -53,7 +53,7 @@
   transform: scale(0.95);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (orientation: portrait) {
   .nav {
     width: 100%;
     z-index: 1000;
@@ -79,6 +79,35 @@
   .nav__btn {
     position: absolute;
     right: 2.5vw;
+  }
+}
+@media (min-width: 768px) and (max-width: 932px) and (orientation: landscape) {
+  .nav {
+    width: 100%;
+    z-index: 1000;
+  }
+  .nav__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav__link {
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav__btn-crow {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+  }
+  .nav__crown {
+    position: absolute;
+    right: 48vw;
+  }
+  .nav__btn {
+    position: absolute;
+    right: 2.5vw;
+    height: 5vh !important;
   }
 }
 @keyframes fadeDown {
@@ -125,6 +154,27 @@ body, html {
 }
 
 @media (min-width: 1024px) {
+  .main {
+    background-image: url(images/background__model-title.png);
+    background-repeat: no-repeat; /* чтобы картинка не повторялась */
+    background-position: top; /* выравнивание по центру */
+    background-size: 572px 595px;
+    min-height: 100vh;
+  }
+  .main__title {
+    width: 701px;
+    height: 200px;
+    margin-top: 30vh;
+  }
+  .main__subtitle {
+    font-family: "Ubuntu";
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+  }
+}
+@media (min-width: 768px) and (max-width: 932px) and (orientation: landscape) {
   .main {
     background-image: url(images/background__model-title.png);
     background-repeat: no-repeat; /* чтобы картинка не повторялась */
@@ -230,6 +280,12 @@ body, html {
     gap: 4.5vw;
   }
 }
+@media (min-width: 768px) and (max-width: 932px) and (orientation: landscape) {
+  .presentation__img {
+    width: 50vw !important;
+    height: auto !important;
+  }
+}
 .services {
   margin-top: 45vh;
   color: aliceblue;
@@ -269,6 +325,28 @@ body, html {
 }
 
 @media (min-width: 1024px) {
+  .services {
+    padding: 0;
+    width: 100%;
+  }
+  .services__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: stretch;
+  }
+  .services__article {
+    width: 25vw;
+    height: auto;
+    padding: 4vw;
+  }
+  .services__btn {
+    width: 25vw;
+    height: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 932px) and (orientation: landscape) {
   .services {
     padding: 0;
     width: 100%;

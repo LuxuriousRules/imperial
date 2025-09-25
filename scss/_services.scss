@@ -70,3 +70,29 @@
         height: auto;
     }
 }
+
+@media(min-width: 768px) and (max-width: 932px) and (orientation: landscape) {
+    .services{
+        padding: 0;
+        width: 100%;
+        
+    }
+    .services__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: stretch;
+        
+}
+    .services__article{
+     width: 25vw;  
+     height: auto; 
+     padding: 4vw;
+    }
+
+    .services__btn{
+        width: 25vw;
+        height: auto;
+    }
+}
