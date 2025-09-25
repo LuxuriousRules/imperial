@@ -81,7 +81,7 @@
     right: 2.5vw;
   }
 }
-@media (min-width: 768px) and (max-width: 932px) and (orientation: landscape) {
+@media (min-width: 748px) and (max-width: 932px) and (orientation: landscape) {
   .nav {
     width: 100%;
     z-index: 1000;
@@ -174,7 +174,7 @@ body, html {
     letter-spacing: 0.02em;
   }
 }
-@media (min-width: 768px) and (max-width: 932px) and (orientation: landscape) {
+@media (min-width: 748px) and (max-width: 932px) and (orientation: landscape) {
   .main {
     background-image: url(images/background__model-title.png);
     background-repeat: no-repeat; /* чтобы картинка не повторялась */
@@ -280,7 +280,7 @@ body, html {
     gap: 4.5vw;
   }
 }
-@media (min-width: 768px) and (max-width: 932px) and (orientation: landscape) {
+@media (min-width: 748px) and (max-width: 932px) and (orientation: landscape) {
   .presentation__img {
     width: 50vw !important;
     height: auto !important;
@@ -346,7 +346,7 @@ body, html {
     height: auto;
   }
 }
-@media (min-width: 768px) and (max-width: 932px) and (orientation: landscape) {
+@media (min-width: 748px) and (max-width: 932px) and (orientation: landscape) {
   .services {
     padding: 0;
     width: 100%;
