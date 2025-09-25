@@ -59,7 +59,7 @@
 }
 
 
-@media(min-width: 1024px) and (orientation: portrait){
+@media(min-width: 1024px)  {
     .nav{
         width: 100%;
         z-index: 1000;
@@ -88,6 +88,19 @@
         right: 2.5vw;
     }
 }
+
+@media (min-width: 1024px) and (max-width: 1180px) {
+    .nav__btn {
+        /* например, уменьшаем кнопку на узких ноутбуках */
+        height: 5vh;
+    }
+
+    .nav__crown {
+        /* подвинем корону ближе */
+        right: 48vw;
+    }
+}
+
 
 @media(min-width: 748px) and (max-width: 932px) and (orientation: landscape) {
      .nav{
