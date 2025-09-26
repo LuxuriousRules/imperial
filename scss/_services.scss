@@ -1,3 +1,4 @@
+
 .services{
     margin-top: 45vh;
     color:aliceblue;
@@ -50,6 +51,7 @@
         padding: 0;
         width: 100%;
         
+        
     }
     .services__wrapper{
     display: grid;
@@ -57,6 +59,7 @@
     justify-content: center;
     justify-items: center;
     align-items: stretch;
+    margin-left: 12.7vw; margin-right: 12.7vw;
         
 }
     .services__article{

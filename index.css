@@ -81,13 +81,12 @@
     right: 2.5vw;
   }
 }
+/* попробуй задать body узже по макету макса в фигме */
 @media (min-width: 1024px) and (max-width: 1180px) {
   .nav__btn {
-    /* например, уменьшаем кнопку на узких ноутбуках */
     height: 5vh;
   }
   .nav__crown {
-    /* подвинем корону ближе */
     right: 48vw;
   }
 }
@@ -345,6 +344,8 @@ body, html {
     justify-content: center;
     justify-items: center;
     align-items: stretch;
+    margin-left: 12.7vw;
+    margin-right: 12.7vw;
   }
   .services__article {
     width: 25vw;
@@ -375,6 +376,29 @@ body, html {
   }
   .services__btn {
     width: 25vw;
+    height: auto;
+  }
+}
+.scroll-down__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.scroll-down__img {
+  width: 50vw;
+  height: auto;
+}
+
+@media (min-width: 748px) and (max-width: 932px) and (orientation: landscape) {
+  .scroll-down__img {
+    width: 25vw;
+    height: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .scroll-down__img {
+    width: 50vw;
     height: auto;
   }
 }

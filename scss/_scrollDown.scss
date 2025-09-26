@@ -1,0 +1,28 @@
+.scroll-down{
+&__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+&__img{
+    width: 50vw;
+    height: auto;
+}
+    
+}
+
+@media(min-width: 748px) and (max-width: 932px) and (orientation: landscape) {
+    .scroll-down__img{
+      width: 25vw;
+      height: auto;  
+    }
+}
+
+@media (min-width: 1024px) {
+    .scroll-down__img{
+      width: 50vw ;
+      height: auto; 
+    }
+}
