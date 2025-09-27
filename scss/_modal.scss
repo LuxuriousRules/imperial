@@ -1,0 +1,78 @@
+.modal {
+  display: none; /* скрыто по умолчанию */
+  position: fixed;
+  position: relative;
+  bottom: 42vh;
+  justify-content: center;
+  animation: fadeLeft 3s ease forwards;
+  
+  
+  
+&__title-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+&__title{
+  margin: 1.5vh;
+  margin-top: 0;
+  font-family: "Ubuntu";
+  color:#c9ac80;
+  font-weight: 100;
+  position: relative;
+}
+
+&__close{
+  color:#c9ac80;
+  position: absolute;
+  left: 79vw; bottom: 27vh;
+}
+
+
+&__content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  background: #171615;
+  padding: 1.5vh;
+}
+
+&__form{
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+&__item,
+textarea{
+  background-color: #c9ac80;
+}
+
+&__btn{
+  font-size: medium;
+  font-family: "Ubuntu" ;
+  color: #c9ac80;
+  background-color:  #171615;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+&__btn:active{
+  cursor: pointer;
+  transform: scale(0.9);
+  color: #fff8ed;
+
+}
+
+}
+
+@keyframes fadeLeft {
+  from{
+    transform: translateX(100px);
+  }
+  to{
+    transform: translateX(0);
+  }
+}

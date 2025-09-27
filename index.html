@@ -24,7 +24,7 @@
             </div>
                  <div class="nav__btn-crown">
                     <img class="nav__crown" src="images/crown_header.png" alt="crown_logo">
-                    <button class="nav__btn">Стать моделью</button>
+                    <button class="nav__btn" id="openModal">Стать моделью</button>
                  </div>
         </div>
         </header>
@@ -124,19 +124,40 @@
                 </div>
                     </div>
             </footer>
-            
-
-
-
-
-
              </main>
+ 
+<div  id="modal" class="modal">
+  <div class="modal__content">
+    <div class="modal__title-wrapper">
+      <h1 class="modal__title">Анкета модели</h1>
+    <span id="closeModal" class="modal__close">&times;</span>
+    </div>
+    <form class="modal__form" id="modelForm">
+      <input class="modal__item" type="text" placeholder="Ваше имя" required>
+      <input class="modal__item" type="tel" placeholder="+38 (093)" pattern="^\+38\s?\(?\d{3}\)?[\s-]?\d{3}[\s-]?\d{2}[\s-]?\d{2}$" 
+
+required>
+      <input class="modal__item" type="email" placeholder="email" required>
+      <textarea class="modal__textarea" placeholder="О себе" rows="4"></textarea>
+      <button class="modal__btn" type="submit">Отправить</button>
+
+    </form>
+  </div>
+
+</div>
+
+
+
+
+
              <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
         duration: 1500
     });
   </script>
+
+  <script src="modal.js"></script>
 
 </body>
 </html>
