@@ -1,0 +1,51 @@
+.footer__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5vw;
+    border: 2px solid #c9ac806c;
+    border-radius: 16px;
+    
+.footer__main-link{
+    font-family: "Ubuntu";
+    text-decoration: none ;
+    font-weight: 300;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    font-size: medium;
+    color:  #c9ac80;
+    transition: transform 0.1s ease ;   
+}
+.footer__link{
+    display: flex;
+    width: 35vw;
+    gap: 1.5vw;
+    cursor: pointer;
+    transform: scale(0.95);
+}
+.footer__main-link:active{
+    cursor: pointer;
+    transform: scale(0.95);
+}
+.footer__icon{
+    cursor: pointer;
+     transition: transform 0.1s ease ;
+}
+.footer__icon:active{
+    cursor: pointer;
+    transform: scale(0.50);    
+}
+}
+
+@media(min-width: 1024px) {
+.footer__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5vw;
+    border: 2px solid #c9ac806c;
+    border-radius: 16px;
+    margin-left: 130px;
+    margin-right: 130px;
+}
+}
