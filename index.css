@@ -454,15 +454,17 @@ body, html {
 .modal {
   display: none; /* скрыто по умолчанию */
   position: fixed;
-  position: relative;
-  bottom: 42vh;
+  bottom: 64vh;
+  left: 20vw;
   justify-content: center;
   animation: fadeLeft 3s ease forwards;
+  overflow-x: hidden;
 }
 .modal__title-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .modal__title {
   margin: 1.5vh;
@@ -474,9 +476,9 @@ body, html {
 }
 .modal__close {
   color: #c9ac80;
-  position: absolute;
-  left: 79vw;
+  position: fixed;
   bottom: 27vh;
+  left: 61vw;
 }
 .modal__content {
   display: flex;
@@ -484,7 +486,7 @@ body, html {
   justify-content: center;
   flex-direction: column;
   border: 2px solid rgba(255, 255, 255, 0.1);
-  background: #171615;
+  background: rgba(0, 0, 0, 0.5);
   padding: 1.5vh;
 }
 .modal__form {

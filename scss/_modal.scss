@@ -1,17 +1,19 @@
 .modal {
   display: none; /* скрыто по умолчанию */
   position: fixed;
-  position: relative;
-  bottom: 42vh;
+  bottom: 64vh;
+  left: 20vw;
+  
   justify-content: center;
   animation: fadeLeft 3s ease forwards;
-  
-  
+  overflow-x: hidden;
+ 
   
 &__title-wrapper{
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 &__title{
@@ -25,8 +27,9 @@
 
 &__close{
   color:#c9ac80;
-  position: absolute;
-  left: 79vw; bottom: 27vh;
+  position: fixed;
+  bottom: 27vh;
+  left: 61vw;
 }
 
 
@@ -36,7 +39,7 @@
   justify-content: center;
   flex-direction: column;
   border: 2px solid rgba(255, 255, 255, 0.1);
-  background: #171615;
+  background:  rgba(0, 0, 0, 0.5);;
   padding: 1.5vh;
 }
 
@@ -76,3 +79,4 @@ textarea{
     transform: translateX(0);
   }
 }
+
