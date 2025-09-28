@@ -1,7 +1,7 @@
 .modal {
   display: none; /* скрыто по умолчанию */
   position: fixed;
-  bottom: 55%;
+  bottom: 52%;
   left: 20%;
   transform: translate(-50%, -50%);
 
@@ -82,5 +82,54 @@ textarea{
   }
 }
 
+@media(min-width: 320px) and (max-width: 400px){
+  .modal {
+  display: none; /* скрыто по умолчанию */
+  position: fixed;
+  bottom: 40%;
+  left: 15%;
+  justify-content: center;
+  animation: fadeLeft 3s ease forwards; 
+}
+ 
+.modal__close{
+  position: relative;
+   bottom: 35%;
+}
 
+
+
+
+
+}
+
+@media(min-width: 1024px) and (max-width: 2450px){
+  .modal {
+  display: none; /* скрыто по умолчанию */
+  position: fixed;
+  bottom: 49%;
+  left: 39%;
+  justify-content: center;
+  animation: fadeLeft 3s ease forwards; 
+}
+
+.modal__content{
+  width: 320px;
+  height: auto;
+}
+.modal__close{
+  all: unset;
+  color: #c9ac80;
+  cursor: pointer;
+  position: relative;
+  left: 8%; bottom: 35%;
+ 
+  
+}
+.modal__title-wrapper{
+  display: flex;
+  width: 100%;
+}
+
+}
 
