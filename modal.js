@@ -21,3 +21,6 @@ document.getElementById("modelForm").addEventListener("submit", (e) => {
   alert("Форма отправлена! (здесь будет запрос на сервер)");
   modal.style.display = "none";
 });
+
+document.body.style.overflowX = 'hidden';
+

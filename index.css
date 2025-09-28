@@ -131,6 +131,7 @@
 body, html {
   background-color: #000000;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .main {
@@ -513,7 +514,7 @@ body, html {
 
 @keyframes fadeLeft {
   from {
-    transform: translateX(100px);
+    transform: translateX(100%);
   }
   to {
     transform: translateX(0);

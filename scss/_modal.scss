@@ -73,10 +73,12 @@ textarea{
 
 @keyframes fadeLeft {
   from{
-    transform: translateX(100px);
+    transform: translateX(100%);
   }
   to{
     transform: translateX(0);
   }
 }
+
+
 
