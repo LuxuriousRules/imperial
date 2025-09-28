@@ -1,9 +1,11 @@
 .modal {
   display: none; /* скрыто по умолчанию */
   position: fixed;
-  bottom: 20vh;
-  left: 20vw;
-  
+  bottom: 55%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+
+
   justify-content: center;
   animation: fadeLeft 3s ease forwards;
   overflow-x: hidden;
