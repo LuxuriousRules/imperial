@@ -531,8 +531,8 @@ body, html {
     animation: fadeLeft 3s ease forwards;
   }
   .modal__close {
-    position: relative;
-    bottom: 35%;
+    left: 95%;
+    bottom: 93%;
   }
 }
 @media (min-width: 1024px) and (max-width: 2450px) {
