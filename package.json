@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "aos": "^2.3.4"
+    "express": "^5.1.0"
   }
 }
