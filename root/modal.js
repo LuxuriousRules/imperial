@@ -16,11 +16,7 @@ window.onclick = (e) => {
     }
 };
 
-document.getElementById("modelForm").addEventListener("submit", (e) => {
-  e.preventDefault();
-  alert("Форма отправлена! (здесь будет запрос на сервер)");
-  modal.style.display = "none";
-});
+
 
 document.body.style.overflowX = 'hidden';
 
@@ -38,12 +34,34 @@ document.getElementById("modelForm").addEventListener("submit", async (e) => {
       body: JSON.stringify({ username, phone, email }),
     });
 
+    // Проверяем HTTP-статус
+    if (!response.ok) throw new Error("Сервер вернул ошибку");
+
     const result = await response.json();
-    alert(result.message); // ответ от сервера
-    modal.style.display = "none";
+
+    // Красивое уведомление об успехе
+    await Swal.fire({
+      icon: "success",
+      title: "Успешно!",
+      text: result.message,
+      showConfirmButton: false,
+      timer: 2500,
+    });
+
+    // Закрываем модалку после уведомления
+    const modal = document.getElementById("modal");
+    if (modal) modal.style.display = "none";
   } catch (err) {
     console.error("Ошибка при отправке:", err);
-    alert("Не удалось отправить данные на сервер");
+
+    // Красивое уведомление об ошибке
+    Swal.fire({
+      icon: "error",
+      title: "Не удалось отправить",
+      text: "Попробуй ещё раз через минуту.",
+      confirmButtonText: "Ок",
+    });
   }
 });
+
 
