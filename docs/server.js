@@ -13,7 +13,7 @@ app.post("/submit", (req, res) => {
 });
 
 // раздаём статику (index.html, стили, скрипты)
-app.use(express.static("public"));
+app.use(express.static(__dirname));
 
 // запускаем сервер
 app.listen(3000, () => {
