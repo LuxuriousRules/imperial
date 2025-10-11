@@ -90,3 +90,38 @@
         transform: scale(1);
     }
 }
+
+@media (min-width: 1023px) and (max-width: 2000px) {
+   .choice__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5vh;
+}
+
+   .choice__description{
+    width: 80vw;
+    font-size: large;
+   }
+
+  .choice__article{
+    margin: 0vw 22vw 1.5vw 22vw;
+  }
+
+  .choice__img{
+    width: 50% !important;
+    height: auto;
+  }
+
+  .choice__tagLine{
+    margin-left: 21vw;
+  }
+
+  .choice__registBtn{
+     padding: 1.5vh !important ;
+      
+     
+  }
+  
+}
