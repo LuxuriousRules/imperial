@@ -628,6 +628,7 @@ body, html {
   height: 6vh;
   padding: 1.5vw 1.5vh;
   margin-top: 3.5vh;
+  cursor: pointer;
   animation: pulse 3.5s infinite;
 }
 
@@ -666,6 +667,83 @@ body, html {
   }
   .choice__registBtn {
     padding: 1.5vh !important;
+  }
+}
+.header-reg {
+  display: flex;
+  justify-content: center;
+}
+.header-reg__img {
+  width: 100%;
+  height: auto;
+}
+
+.main-reg {
+  font-family: "Ubuntu";
+  color: #c9ac80;
+}
+
+.main-reg__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-reg__title .main-reg__subtitle {
+  margin-bottom: 0;
+}
+
+.main-reg__wrapp-border {
+  border: 2px solid #c9ac80;
+  background-color: rgba(201, 172, 128, 0.1843137255);
+  padding: 2.5vw;
+  margin-left: 17.5vw;
+  margin-right: 17.5vw;
+  margin-bottom: 1.5vh;
+}
+
+.main-reg__article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-reg__down-aricle-wrapp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-reg__down-aricle-wrapp .main-reg__name {
+  margin-top: 1.5vh;
+}
+.main-reg__down-aricle-wrapp .main-reg__btn {
+  margin-top: 1.5vh;
+  width: 35vw;
+  height: auto;
+  font-size: large;
+  font-family: "Ubuntu";
+  letter-spacing: 0.08em;
+  background-color: rgba(201, 172, 128, 0.1490196078);
+  color: #c9ac80;
+  cursor: pointer;
+}
+
+@media (min-width: 500px) and (max-width: 2000px) {
+  .header-reg__img {
+    width: 50vw;
+    height: auto;
+  }
+  .main-reg__btn {
+    width: 10vw !important;
+  }
+  .main-reg__wrapp-border {
+    border: 2px solid #c9ac80;
+    background-color: rgba(201, 172, 128, 0.1843137255);
+    padding: 2.5vw;
+    margin-left: 30.5vw;
+    margin-right: 30.5vw;
+    margin-bottom: 1.5vh;
   }
 }
 

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Лучшее модельное агентство: международные контракты, профессиональное продвижение и карьерный рост для моделей по всему миру.»">
+  <meta name="keywords" content="HTML, CSS, пример">
+  <meta name="author" content="VS">
+  <title>Регистрация анкеты</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+
+<body>
+    <div data-aos="fade-zoom-in">
+    <header class="header-reg">
+        <img class="header-reg__img" src="images/regist.png" alt="Свадебное фото">
+    </header>
+    </div>
+    
+    <main class="main-reg">
+      
+        <article class="main-reg__title">
+          <h1 class="main-reg__subtitle">Анкета </h1>
+          <p class="main-reg__description"><strong> для регистрации в брачном агентстве Imperial</strong></p>
+        </article>
+      
+      
+ <div data-aos="fade-up">
+
+      <form  id="from" action="/submit" method="post">
+
+      <div class="main-reg__wrapp-border">
+
+        <article class="main-reg__article">
+          <label class="main-reg__email" for="email">email</label>
+          <input class="main-reg__input" id="email" type="email" placeholder="email" name="email">
+        </article>
+
+        <article class="main-reg__article">
+          <label class="main-reg__name" for="name">имя</label>
+          <input class="main-reg__input" id="name" type="text" placeholder="имя" name="name">
+        </article>
+
+        <article class="main-reg__article">
+          <label class="main-reg__name" for="lastName">фамилия</label>
+          <input class="main-reg__input" id="lastName" type="text" placeholder="фамилия" name="lastName">
+        </article>
+                 
+
+        <article class="main-reg__article">
+          <label class="main-reg__name" for="country">страна</label>
+          <input class="main-reg__input" id="country" type="text" placeholder="страна" name="country">
+        </article>
+
+        <article class="main-reg__article">
+          <label class="main-reg__name" for="city">город</label>
+          <input class="main-reg__input"  id="city" type="text" placeholder="город" name="city">
+        </article>
+
+        <article class="main-reg__article">
+          <label class="main-reg__name" for="phone">контакный номер</label>
+          <input class="main-reg__input" id="phone" type="tel" placeholder="телефон" name="phone">
+        </article>
+        
+        <article class="main-reg__article">
+          <label class="main-reg__name" for="age">возраст</label>
+          <input class="main-reg__input" id="age" type="number" placeholder="ваш ответ" name="age">
+        </article>
+
+        <article class="main-reg__article">
+          <label class="main-reg__name" for="height">рост</label>
+          <input class="main-reg__input" id="height" type="number" placeholder="ваш ответ" name="height">
+        </article>
+
+        <article class="main-reg__article">
+          <label class="main-reg__name" for="weight">вес</label>
+          <input class="main-reg__input" id="weight" type="number" placeholder="ваш ответ" name="weight">
+        </article>
+        
+        <article class="main-reg__article">
+          <label class="main-reg__name" for="job">професия</label>
+          <input class="main-reg__input" id="job" type="text" placeholder="ваш ответ" name="job">
+        </article>
+
+        <article class="main-reg__article">
+          <label class="main-reg__name" for="children">есть ли у вас дети </label>
+          <input class="main-reg__input"  id="children" type="text" placeholder="ваш ответ" name="children">
+        </article>
+
+        <article class="main-reg__article">
+          <label class="main-reg__name" for="about">о себе</label>
+          <input class="main-reg__input" id="about" type="text" placeholder="о себе" name="about">
+        </article>
+               
+      
+      <div class="main-reg__down-aricle-wrapp">
+        <article class="main-reg__article">
+          <label class="main-reg__name" for="photo">прикрепить фотографии</label>
+          <input  id="photo" class="main-reg__input" type="file" name="photo" accept="image/*" required>
+          <button id="send-photo-btn" class="main-reg__btn" type="submit">отправить</button>
+        </article>
+      </div>
+
+      </div>
+      </form>
+</div> 
+ 
+   
+  
+    </main>
+
+
+
+
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        duration: 1500
+    });
+  </script>
+</body>
+</html>

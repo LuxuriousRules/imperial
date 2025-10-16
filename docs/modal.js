@@ -2,6 +2,7 @@ const modal = document.getElementById("modal");
 const openBtn = document.getElementById("openModal");
 const closeBtn = document.getElementById("closeModal");
 
+
 openBtn.onclick = () => {
     modal.style.display = "flex";
 };
@@ -64,4 +65,9 @@ document.getElementById("modelForm").addEventListener("submit", async (e) => {
   }
 });
 
+const regBtn = document.getElementById("regBtn");
+
+regBtn.addEventListener("click", () => {
+  window.location.href = "registPage.html";
+});
 
