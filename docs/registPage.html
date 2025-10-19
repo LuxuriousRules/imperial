@@ -32,7 +32,7 @@
       
  <div data-aos="fade-up">
 
-      <form  id="from" action="/submit" method="post">
+      <form  id="from" action="/submit-from" method="post" enctype="multipart/form-data">
 
       <div class="main-reg__wrapp-border">
 
@@ -64,7 +64,7 @@
 
         <article class="main-reg__article">
           <label class="main-reg__name" for="phone">контакный номер</label>
-          <input class="main-reg__input" id="phone" type="tel" placeholder="телефон" name="phone">
+          <input class="main-reg__input" id="phoneReg" type="tel" placeholder="телефон" name="phone">
         </article>
         
         <article class="main-reg__article">
@@ -98,19 +98,19 @@
         </article>
                
       
-      <div class="main-reg__down-aricle-wrapp">
+     
         <article class="main-reg__article">
           <label class="main-reg__name" for="photo">прикрепить фотографии</label>
           <input  id="photo" class="main-reg__input" type="file" name="photo" accept="image/*" required>
           <button id="send-photo-btn" class="main-reg__btn" type="submit">отправить</button>
         </article>
-      </div>
+      
 
       </div>
       </form>
+      
 </div> 
- 
-   
+
   
     </main>
 
@@ -119,11 +119,15 @@
 
 
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
         duration: 1500
     });
   </script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="registPage.js"></script>
+
 </body>
 </html>

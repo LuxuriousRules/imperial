@@ -29,7 +29,7 @@ document.getElementById("modelForm").addEventListener("submit", async (e) => {
   const phone = document.getElementById("phone").value;
 
   try {
-    const response = await fetch("/submit", {
+    const response = await fetch("/submit-modal", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ username, phone, email }),
@@ -65,9 +65,15 @@ document.getElementById("modelForm").addEventListener("submit", async (e) => {
   }
 });
 
+
+
+/* regBtn */
+
 const regBtn = document.getElementById("regBtn");
 
 regBtn.addEventListener("click", () => {
-  window.location.href = "registPage.html";
+window.location.href = "registPage.html";
 });
+
+/* regBtn */
 

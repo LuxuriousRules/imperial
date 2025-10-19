@@ -729,6 +729,28 @@ body, html {
   cursor: pointer;
 }
 
+.notify {
+  position: fixed;
+  top: 20px;
+  right: -400px; /* изначально скрыто */
+  background: #4caf50; /* зелёный фон для успеха */
+  color: white;
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-family: sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: right 0.5s ease;
+  z-index: 9999;
+}
+
+.notify.show {
+  right: 20px; /* выезжает справа */
+}
+
+.notify.error {
+  background: #f44336; /* красный фон для ошибки */
+}
+
 @media (min-width: 500px) and (max-width: 2000px) {
   .header-reg__img {
     width: 50vw;
@@ -745,6 +767,36 @@ body, html {
     margin-right: 30.5vw;
     margin-bottom: 1.5vh;
   }
+}
+.aboutUs__conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.aboutUs__title {
+  font-family: "Ubuntu";
+  font-weight: 100;
+  color: rgb(254, 254, 255);
+  margin: 0;
+  padding-top: 18vh;
+  padding-left: 4.5vw;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.aboutUs__main {
+  position: relative;
+  background-image: url("images/backAbout.png");
+  height: 26vh;
 }
 
 /*# sourceMappingURL=index.css.map */
