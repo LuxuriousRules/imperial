@@ -9,25 +9,97 @@
     font-weight: 100;
     color: rgb(254, 254, 255);
     margin: 0;
-    padding-top: 18vh;
+    padding-top: 17vh;
     padding-left: 4.5vw; 
 }
+
+.aboutUs__span{
+    margin-left: 12vw;
+}
+
+
 #particles-js {
   position: absolute;
   width: 100%;
-  height: 30%;
+  height: 26vh;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 5;
 }
-
-
-
-
 
 .aboutUs__main{
     position: relative;
     background-image: url("images/backAbout.png");
     height: 26vh;
     
+}
+
+.article__main{
+    
+    margin: 1.5vh 2vw 1.5vh 2vw;
+    padding: 0.5vh 1.5vw;
+}
+
+
+.article__title{
+    color: rgb(254, 254, 255);
+    font-family:"Ubuntu";
+    font-weight: 100;
+    padding: 1.8%; margin: 0;
+}
+
+
+.article__item{
+    color: rgb(254, 254, 255);
+    font-family:"Ubuntu";
+    font-weight: 100;
+    font-size: x-large;
+    padding: 1.8%; margin-left: 10vw; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line{
+    width: 85%;
+    height: 2px;
+    background-color: rgba(255, 183, 1, 0.299);
+    border: none;
+    animation: move 1s linear forwards;
+
+}
+
+@keyframes move{
+ from{  
+    transform: scaleX(0);
+}
+ to {
+    transform: scaleX(1);
+ }
 }
