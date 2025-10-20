@@ -825,6 +825,20 @@ body, html {
   margin-left: 10vw;
 }
 
+@media (min-width: 385px) and (max-width: 430px) {
+  .aboutUs__main {
+    height: 28vh;
+  }
+  .aboutUs__title {
+    font-family: "Ubuntu";
+    font-weight: 100;
+    color: rgb(254, 254, 255);
+    margin: 0;
+    padding-top: 19vh;
+    padding-left: 4vw;
+    font-size: 1.9rem;
+  }
+}
 #line {
   width: 85%;
   height: 2px;
