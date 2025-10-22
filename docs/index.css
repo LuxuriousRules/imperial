@@ -839,6 +839,22 @@ body, html {
     font-size: 1.9rem;
   }
 }
+@media (min-width: 1024px) and (max-width: 2000px) {
+  .aboutUs__conteiner {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+  .aboutUs__span {
+    margin-left: 0;
+  }
+  .aboutUs__title {
+    padding-top: 15vh;
+    padding-left: 18vw;
+  }
+}
 #line {
   width: 85%;
   height: 2px;
@@ -854,6 +870,71 @@ body, html {
   to {
     transform: scaleX(1);
   }
+}
+.magic-box__down,
+.magic-box__upp {
+  width: 100%;
+}
+
+.magic-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  top: 30vh;
+}
+
+.magic-box__down,
+.magic-box__upp {
+  position: absolute;
+  z-index: 2;
+}
+
+.magic-box__title {
+  position: absolute;
+  left: 25%;
+  bottom: 100%;
+  color: #c9ac80;
+  font-family: "Ubuntu";
+  font-size: clamp(50px, 100vw, 60px);
+  z-index: -1;
+  animation: slide 20s ease forwards;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.magic-box__upp {
+  animation: openLeft 15s ease forwards;
+}
+
+.magic-box__down {
+  animation: openRight 15s ease forwards;
+}
+
+@keyframes openLeft {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-100%);
+  }
+}
+@keyframes openRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+#particles-js {
+  z-index: -1;
 }
 
 /*# sourceMappingURL=index.css.map */

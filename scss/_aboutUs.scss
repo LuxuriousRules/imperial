@@ -74,8 +74,26 @@
 }
 
 
+@media(min-width: 1024px) and (max-width: 2000px) {
+    .aboutUs__conteiner {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
 
+   .aboutUs__span{
+    margin-left: 0;
+}
 
+   .aboutUs__title{
+     padding-top: 15vh;
+     padding-left: 18vw; 
+   }
+
+}
+ 
 
 
 
