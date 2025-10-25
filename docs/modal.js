@@ -77,3 +77,4 @@ window.location.href = "registPage.html";
 
 /* regBtn */
 
+

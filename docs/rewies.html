@@ -46,6 +46,41 @@
        </div>
      </div>
 
+<section class="rewies">
+  
+
+  <div class="rewies__container rewies__container--sticky">
+    <h2 class="rewies__title">Истории наших клиентов</h2>
+    <p class="rewies__subTitle">Sroll Down <img class="rewies__img" src="images/rew/Arrow down2.png" alt="arrow"></p>
+  </div>
+<div data-aos="fade-up">
+  <article class="rewies__profile">
+    <img class="rewies__img" src="images/rew/avatar.png" alt="avatar">
+    <h2 class="rewies__title">Вера</h2>
+    <p class="rewies__text">Хочу выразить огромную благодарность брачному агентству за их профессионализм и заботу. С самого первого дня я почувствовала внимание и поддержку: менеджеры помогали с анкетой, давали советы и всегда были на связи. Атмосфера была очень доверительной, и я чувствовала себя в безопасности.</p>
+  </article>
+</div>  
+<hr class="rewiesHr">
+<div data-aos="fade-up">
+<article class="rewies__profile">
+    <img class="rewies__img" src="images/rew/avatar2.png" alt="avatar">
+    <h2 class="rewies__title">Диана</h2>
+    <p class="rewies__text">Благодаря их работе я познакомилась с человеком, с которым у нас оказалось много общих ценностей и интересов. Мы продолжаем общение, и я искренне верю, что это начало чего‑то важного.
+Спасибо вам за то, что помогаете людям находить своё счастье!
+</p>
+  </article>
+</div>
+<hr class="rewiesHr">
+<div data-aos="fade-up">
+  <article class="rewies__profile">
+    <img class="rewies__img" src="images/rew/avatar3.png" alt="avatar">
+    <h2 class="rewies__title">Мария</h2>
+    <p class="rewies__text">"Обратилась в агентство по совету подруги и осталась очень довольна. С самого начала чувствовалась забота и внимание: сотрудники помогли грамотно составить анкету, поддерживали на каждом этапе и всегда были на связи. Атмосфера была тёплой и доверительной, я чувствовала себя в безопасности и понимала, что здесь действительно заинтересованы в результате.</p>
+  </article>
+</div>
+</section>
+
+
 
 </main>
         
@@ -81,7 +116,22 @@
 
 
 
-
+ <footer class="footer">
+                <div class="footer__wrapper">
+                        <a class="footer__main-link" href="#">imperialagency@gmail.com</a>
+                <div class="footer__link">
+                        <a class="footer__link" href="https://web.telegram.org/k/">
+                          <img class="footer__icon" src="images/smallIcon/Icons_link_telega.png">
+                        </a>
+                        <a class="footer__link" href="https://www.tiktok.com/uk-UA/">
+                          <img class="footer__icon" src="images/smallIcon/Icons_link_tik.png">
+                        </a>
+                         <a class="footer__link" href="https://www.instagram.com/">
+                          <img class="footer__icon" src="images/smallIcon/Icons_link_insta.png">
+                        </a>
+                </div>
+                    </div>
+            </footer>
 
 
 
@@ -125,7 +175,7 @@ required>
       particlesJS("particles-js", {
         particles: {
           number: { value: 200 },
-          size: { value: 2 },
+          size: { value: 1 },
           move: { speed: 1 },
           opacity: { value: 0.5 },
           line_linked: { enable: false }
@@ -142,9 +192,23 @@ required>
 
 
 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+gsap.registerPlugin(ScrollTrigger);
 
-
-
+gsap.to(".rewies__container--sticky", {
+  y: 200,          // смещение вниз
+  opacity: 0,      // исчезновение
+  ease: "none",    // без ускорения
+  scrollTrigger: {
+    trigger: ".rewies__container--sticky",   // секция, к которой привязываемся
+    start: "top top",     // когда верх секции совпадает с верхом окна
+    end: " bottom+=2000",    // до конца секции
+    scrub: 3           // плавная привязка к скроллу
+  }
+});
+</script>
 
 
 
@@ -156,7 +220,7 @@ required>
         duration: 1500
     });
   </script>
-
+  
   <script src="modal.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>

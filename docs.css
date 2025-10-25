@@ -994,7 +994,6 @@ body, html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40vh;
 }
 
 .rewies__container--sticky {
@@ -1020,24 +1019,4 @@ body, html {
   top: 1vh;
 }
 
-.rewies__profile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.rewies__profile .rewies__img {
-  width: 90%;
-  height: auto;
-}
-.rewies__profile .rewies__text {
-  font-family: "Ubuntu";
-  color: #c9ac80;
-  padding: 3.5vw;
-  font-size: clamp(20px, 20vh, 30px);
-}
-
-hr {
-  width: 85vw;
-}
-
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=docs.css.map */
