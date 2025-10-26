@@ -926,8 +926,10 @@ body, html {
   color: #c9ac80;
   animation: titscale 15s ease forwards;
 }
+.magicBox__content {
+  /*title*/
+}
 
-/*title*/
 @keyframes titscale {
   0% {
     transform: scale(0);
@@ -1034,13 +1036,14 @@ body, html {
   font-size: clamp(20px, 20vh, 30px);
 }
 
-.ku {
-  border: 3px solid white;
+hr {
+  width: 85vw;
 }
 
-.hareKrishna {
-  font-size: xx-large;
-  color: aliceblue;
+@media (min-width: 1024px) {
+  .magicBox__wrapp--realative img {
+    width: clamp(150px, 2vw, 300px);
+  }
 }
 
-/*# sourceMappingURL=index.scss.map */
+/*# sourceMappingURL=index.css.map */
